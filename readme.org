@@ -1,0 +1,22 @@
+* Purpose
+  Code to explore: one-html-file-with-react.
+
+* Setup
+
+- Install something to servce static files from a folder.  I use
+  caddy.  And run it something like this:
+  #+begin_src sh
+    ulimit -n 8192 && caddy -root .dist -port 1111 2>&1 > /dev/null &
+  #+end_src
+
+- Clone the repo.
+- Run the =build= command:
+  #+begin_src sh
+    ./run.sh build
+  #+end_src
+- The output of the build command is written to .dist which is served
+  via the above =Caddy= process.
+- On Mac open your browser to http://localhost:1111 
+  #+begin_src sh
+    open http://localhost:1111
+  #+end_src
