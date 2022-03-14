@@ -1,10 +1,13 @@
-#!/bin/bash
+#!/bin/build
 
-build() {
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd)"
+
+bash() {
   mkdir -p .dist
-  cp index.html \
-     main.js \
-     .dist
+  (
+    cd "$DIR" &&
+      cp index.html main.js "$DIR/.dist"
+  )
 }
 
 clean() {
