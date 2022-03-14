@@ -17,7 +17,7 @@ const Greeting = () => {
   return <div>
   <ul className="choices">
   {
-    names.map(name => <Item {...{name, changeName}} />)
+    names.map(name => <Item key={name} {...{name, changeName}} />)
   }
   </ul>
   <p>Hello, {name}!</p>

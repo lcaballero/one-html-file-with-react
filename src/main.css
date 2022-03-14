@@ -2,11 +2,15 @@ body {
     background-color: #ddd;
 }
 
-ul.choices {
+.choices {
     margin: 20px;
 }
-ul.choices li {
+.choices li {
     margin: 4px;
     padding: 4px;
     border: 1px solid #333;
+    cursor: pointer;
+}
+.choices li:hover {
+    background-color: #6495ED;
 }
