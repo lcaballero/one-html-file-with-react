@@ -23,6 +23,7 @@ const Greeting = () => {
   <p>Hello, {name}!</p>
   </div>
 }
+
 ReactDOM.render(
   <Greeting />,
   document.getElementById('root')
