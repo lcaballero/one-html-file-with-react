@@ -1,3 +1,5 @@
 .DS_STORE
-ip
+pid
+
+# output directory where source code is written
 .dist
